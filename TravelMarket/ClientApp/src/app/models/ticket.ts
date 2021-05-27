@@ -5,6 +5,7 @@ export class Ticket {
     public url: string) { }
 
   GetUrl(): string {
+    console.log(`url('${this.url}')`);  
     return `url('${this.url}')`;
   }
 
