@@ -1,0 +1,12 @@
+<div class="ticket-container" *ngFor="let ticket of tickets; index as i">
+  <div class="img-container" [style.background-image]="ticket.GetUrl()"></div>
+  <div class="content-container">
+    <div class="hotel-name">{{ticket.name}}</div>
+    <div class="metaphore">{{ticket.description}}</div>
+    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam et magni nam voluptatibus eum? Modi vel quos itaque ex quia dolorum quis deserunt obcaecati natus.</div>
+    <div class="controls">
+      <button id="about">About</button>
+      <button id="buy">Buy</button>
+    </div>
+  </div>
+</div>
